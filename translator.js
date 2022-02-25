@@ -1,3 +1,52 @@
+
+const translatedEnglish = document.getElementById("translated-english");
+const englishToMorseButton = document.getElementById("english-to-morse-button");
+
+const lettersToMorseObject = {
+  "A" :	".-",
+  "B" :	"-...",	
+  "C" :	"-.-.",
+  "D" :	"-..",	
+  "E" :	".",	
+  "F" :	"..-.",
+  "G" :	"--.",	
+  "H" :	"....",	
+  "I" :	"..",	
+  "J" :	".---",	
+  "K" :	"-.-",	
+  "L" :	".-..",
+  "M" :	"--",
+  "N" :	"-.",	
+  "O" :	"---",	
+  "P" :	".--.",	
+  "Q" :	"--.-",	
+  "R" :	".-.",
+  "S" :	"...",	
+  "T" :	"-",	
+  "U" :	"..-",	
+  "V" :	"...-",
+  "W" :	".--",	
+  "X" :	"-..-",
+  "Y" :	"-.--",	
+  "Z" :	"--.."
+}
+
+
+export const translateLettersToMorse = () => {
+  const englishToMorseInput = document.getElementById("english-to-morse-input").value;
+  // console.log("hello");
+  // console.log(englishToMorseInput);
+  // let letter = englishToMorseInput
+  // console.log(letter);
+  let upperCaseLetter = englishToMorseInput.toUpperCase();
+  // console.log(upperCaseLetter);
+  // console.log(lettersToMorseObject[upperCaseLetter]);
+  let finalTranslation = lettersToMorseObject[upperCaseLetter];
+  // return lettersToMorseObject[upperCaseLetter];
+  translatedEnglish.innerHTML = finalTranslation;
+};
+
+
 //  stub out functions we need
 
 // english to morse translator function
@@ -34,46 +83,46 @@
 // const Z =	"--..";
 // const space = "/";
 
-const lettersToMorseObject = {
-  "A" :	".-",
-  "B" :	"-...",	
-  "C" :	"-.-.",
-  "D" :	"-..",	
-  "E" :	".",	
-  "F" :	"..-.",
-  "G" :	"--.",	
-  "H" :	"....",	
-  "I" :	"..",	
-  "J" :	".---",	
-  "K" :	"-.-",	
-  "L" :	".-..",
-  "M" :	"--",
-  "N" :	"-.",	
-  "O" :	"---",	
-  "P" :	".--.",	
-  "Q" :	"--.-",	
-  "R" :	".-.",
-  "S" :	"...",	
-  "T" :	"-",	
-  "U" :	"..-",	
-  "V" :	"...-",
-  "W" :	".--",	
-  "X" :	"-..-",
-  "Y" :	"-.--",	
-  "Z" :	"--.."
-}
+// const lettersToMorseObject = {
+//   "A" :	".-",
+//   "B" :	"-...",	
+//   "C" :	"-.-.",
+//   "D" :	"-..",	
+//   "E" :	".",	
+//   "F" :	"..-.",
+//   "G" :	"--.",	
+//   "H" :	"....",	
+//   "I" :	"..",	
+//   "J" :	".---",	
+//   "K" :	"-.-",	
+//   "L" :	".-..",
+//   "M" :	"--",
+//   "N" :	"-.",	
+//   "O" :	"---",	
+//   "P" :	".--.",	
+//   "Q" :	"--.-",	
+//   "R" :	".-.",
+//   "S" :	"...",	
+//   "T" :	"-",	
+//   "U" :	"..-",	
+//   "V" :	"...-",
+//   "W" :	".--",	
+//   "X" :	"-..-",
+//   "Y" :	"-.--",	
+//   "Z" :	"--.."
+// }
 
-console.log(lettersToMorseObject["A"]);
+// console.log(lettersToMorseObject["A"]);
 
-let letter = "z"
-let upperCaseLetter = letter.toUpperCase();
+// let letter = "z"
+// let upperCaseLetter = letter.toUpperCase();
 
-const translateLettersToMorse = (upperCaseLetter) => {
-    return lettersToMorseObject[upperCaseLetter]
-  };
+// export const translateLettersToMorse = (upperCaseLetter) => {
+//     return lettersToMorseObject[upperCaseLetter]
+//   };
 
 
-console.log(translateLettersToMorse(upperCaseLetter));
+// console.log(translateLettersToMorse(upperCaseLetter));
 
 
 
