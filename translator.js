@@ -32,10 +32,21 @@ const lettersToMorseObject = {
 }
 
 
-export const translateLettersToMorse = () => {
+export const translateEnglishToMorse = () => {
   const englishToMorseInput = document.getElementById("english-to-morse-input").value;
-  let upperCaseLetter = englishToMorseInput.toUpperCase();
-  let finalTranslation = lettersToMorseObject[upperCaseLetter];
-  translatedEnglish.innerHTML = finalTranslation;
-  return finalTranslation;
+  let upperCaseWord = englishToMorseInput.toUpperCase();
+  for (let i = 0; i < upperCaseWord.length; i++) {
+    let character = upperCaseWord.charAt(i)
+    console.log(character);
+    let finalTranslation = lettersToMorseObject[character];
+    console.log(finalTranslation);
+    translatedEnglish.innerHTML += finalTranslation;
+  };
 };
+
+// const word = "hello";
+
+// for (let i = 0; i < word.length; i++) {
+//   let character = word.charAt(i)
+//   console.log(character);
+// };
