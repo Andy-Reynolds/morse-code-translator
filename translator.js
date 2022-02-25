@@ -39,9 +39,7 @@ export const translateEnglishToMorse = () => {
   let upperCaseWord = englishToMorseInput.toUpperCase();
   for (let i = 0; i < upperCaseWord.length; i++) {
     let character = upperCaseWord.charAt(i)
-    console.log(character);
     let finalTranslation = lettersToMorseObject[character];
-    console.log(finalTranslation);
     translatedEnglish.innerHTML += ` ${finalTranslation}`;
   };
 };
