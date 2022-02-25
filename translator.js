@@ -1,6 +1,6 @@
 
 const translatedEnglish = document.getElementById("translated-english");
-const englishToMorseButton = document.getElementById("english-to-morse-button");
+// const englishToMorseButton = document.getElementById("english-to-morse-button");
 
 const lettersToMorseObject = {
   "A" :	".-",
@@ -28,11 +28,13 @@ const lettersToMorseObject = {
   "W" :	".--",	
   "X" :	"-..-",
   "Y" :	"-.--",	
-  "Z" :	"--.."
+  "Z" :	"--..",
+  " " : "/"
 }
 
 
 export const translateEnglishToMorse = () => {
+  translatedEnglish.innerHTML = "";
   const englishToMorseInput = document.getElementById("english-to-morse-input").value;
   let upperCaseWord = englishToMorseInput.toUpperCase();
   for (let i = 0; i < upperCaseWord.length; i++) {
@@ -40,7 +42,7 @@ export const translateEnglishToMorse = () => {
     console.log(character);
     let finalTranslation = lettersToMorseObject[character];
     console.log(finalTranslation);
-    translatedEnglish.innerHTML += finalTranslation;
+    translatedEnglish.innerHTML += ` ${finalTranslation}`;
   };
 };
 
