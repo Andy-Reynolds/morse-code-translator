@@ -32,6 +32,49 @@ const W =	".--";
 const X =	"-..-";
 const Y =	"-.--";	
 const Z =	"--..";
+const space = "/";
+
+const lettersToMorseObject = {
+  "A" :	".-",
+  "B" :	"-...",	
+  "C" :	"-.-.",
+  "D" :	"-..",	
+  "E" :	".",	
+  "F" :	"..-.",
+  "G" :	"--.",	
+  "H" :	"....",	
+  "I" :	"..",	
+  "J" :	".---",	
+  "K" :	"-.-",	
+  "L" :	".-..",
+  "M" :	"--",
+  "N" :	"-.",	
+  "O" :	"---",	
+  "P" :	".--.",	
+  "Q" :	"--.-",	
+  "R" :	".-.",
+  "S" :	"...",	
+  "T" :	"-",	
+  "U" :	"..-",	
+  "V" :	"...-",
+  "W" :	".--",	
+  "X" :	"-..-",
+  "Y" :	"-.--",	
+  "Z" :	"--.."
+}
+
+// function to convert each letter to morse
+const convertLetterToMorse = (letter) => {
+  if (letter == "a") {
+    console.log(A);
+  };
+  if (letter == "a") {
+    console.log(A);
+  };
+}
+
+
+// function to split word into characters, each character then run through convert letter function
 
 
 
@@ -40,15 +83,6 @@ let englishWord = "abc";
 for (let i = 0; i < englishWord.length; i++) {
   let wordCharacters = englishWord.charAt(i);
   console.log(wordCharacters);
-  if (wordCharacters == "a") {
-    console.log(A);
-  };
-  if (wordCharacters == "b") {
-    console.log(B);
-  };
-  if (wordCharacters == "c") {
-    console.log(C);
-  };
 }
 
 // each combo of morse can be a string variable. e.g.
