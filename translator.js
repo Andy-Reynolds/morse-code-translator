@@ -43,10 +43,3 @@ export const translateEnglishToMorse = () => {
     translatedEnglish.innerHTML += ` ${finalTranslation}`;
   };
 };
-
-// const word = "hello";
-
-// for (let i = 0; i < word.length; i++) {
-//   let character = word.charAt(i)
-//   console.log(character);
-// };
