@@ -1,3 +1,5 @@
+// NEED TO REMOVE ALL DOM STUFF FROM THIS FILE FOR TEST TO RUN. SHOULD BE NO REFERENCES TO THE DOCUMENT
+
 
 const translatedEnglish = document.getElementById("translated-english");
 // const englishToMorseButton = document.getElementById("english-to-morse-button");
