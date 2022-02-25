@@ -37,4 +37,5 @@ export const translateLettersToMorse = () => {
   let upperCaseLetter = englishToMorseInput.toUpperCase();
   let finalTranslation = lettersToMorseObject[upperCaseLetter];
   translatedEnglish.innerHTML = finalTranslation;
+  return finalTranslation;
 };
